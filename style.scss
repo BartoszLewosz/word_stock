@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(192, 184, 184);
+}
+
+.photos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: 2rem auto;
+  cursor: pointer;
+  background: rgb(225, 238, 212);
+  &__item {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    background: rgb(159, 212, 105);
+  }
+}
+.description {
+  background: yellowgreen;
+}

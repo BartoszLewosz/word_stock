@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c0b8b8;
+}
+
+.photos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: 2rem auto;
+  cursor: pointer;
+  background: #e1eed4;
+}
+.photos__item {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  background: #9fd469;
+}
+
+.description {
+  background: yellowgreen;
+}
+
+/*# sourceMappingURL=main.css.map */
