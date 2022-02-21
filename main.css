@@ -343,6 +343,29 @@ template {
   box-sizing: border-box;
 }
 
+.hero {
+  background-color: lightgreen;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.instructions {
+  text-align: center;
+  padding: 4rem 8rem;
+}
+
+.photos {
+  display: flex;
+}
+.photos__header {
+  text-align: center;
+}
+
+.photo__group {
+  display: flex;
+  flex-direction: column;
+}
+
 .photo__image {
   width: 100px;
   height: 100px;

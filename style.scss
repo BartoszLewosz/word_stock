@@ -4,9 +4,28 @@
   padding: 0;
   box-sizing: border-box;
 }
-.photo {
-  &__image {
-    width: 100px;
-    height: 100px;
+.hero {
+  background-color: lightgreen;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+.instructions {
+  text-align: center;
+  padding: 4rem 8rem;
+}
+.photos {
+  display: flex;
+  &__header {
+    text-align: center;
   }
+}
+
+.photo__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo__image {
+  width: 100px;
+  height: 100px;
 }
