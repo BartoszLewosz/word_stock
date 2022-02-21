@@ -343,4 +343,9 @@ template {
   box-sizing: border-box;
 }
 
+.photo__image {
+  width: 100px;
+  height: 100px;
+}
+
 /*# sourceMappingURL=main.css.map */

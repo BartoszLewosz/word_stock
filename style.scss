@@ -4,3 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.photo {
+  &__image {
+    width: 100px;
+    height: 100px;
+  }
+}
