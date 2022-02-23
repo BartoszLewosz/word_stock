@@ -11,7 +11,11 @@
 }
 .instructions {
   text-align: center;
-  padding: 4rem 8rem;
+  padding: 2rem 4rem;
+  h2 {
+    margin: 1rem;
+    padding: 1rem;
+  }
 }
 .photos {
   display: flex;
