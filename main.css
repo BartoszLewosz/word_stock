@@ -378,6 +378,7 @@ template {
 }
 .photo__description--polish, .photo__description--english {
   text-align: center;
+  margin: 8px;
 }
 
 /*# sourceMappingURL=main.css.map */
