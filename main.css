@@ -358,21 +358,26 @@ template {
   padding: 1rem;
 }
 
-.photos {
+.photo {
   display: flex;
+  justify-content: center;
 }
-.photos__header {
-  text-align: center;
-}
-
 .photo__group {
   display: flex;
   flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
 }
-
 .photo__image {
   width: 100px;
   height: 100px;
+}
+.photo__description {
+  display: flex;
+  flex-direction: column;
+}
+.photo__description--polish, .photo__description--english {
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

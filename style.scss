@@ -17,19 +17,27 @@
     padding: 1rem;
   }
 }
-.photos {
+.photo {
   display: flex;
-  &__header {
-    text-align: center;
+  justify-content: center;
+  &__group {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
   }
-}
-
-.photo__group {
-  display: flex;
-  flex-direction: column;
-}
-
-.photo__image {
-  width: 100px;
-  height: 100px;
+  &__item {
+  }
+  &__image {
+    width: 100px;
+    height: 100px;
+  }
+  &__description {
+    display: flex;
+    flex-direction: column;
+    &--polish,
+    &--english {
+      text-align: center;
+    }
+  }
 }
