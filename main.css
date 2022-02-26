@@ -378,7 +378,7 @@ template {
 .photo__description {
   display: flex;
   flex-direction: column;
-  opacity: 0.3;
+  visibility: hidden;
 }
 .photo__description--polish, .photo__description--english {
   text-align: center;
