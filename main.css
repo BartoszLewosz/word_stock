@@ -368,6 +368,9 @@ template {
   margin: 1rem;
   padding: 1rem;
 }
+.photo__item {
+  cursor: pointer;
+}
 .photo__image {
   width: 100px;
   height: 100px;
