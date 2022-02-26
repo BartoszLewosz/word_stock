@@ -35,6 +35,7 @@
   &__description {
     display: flex;
     flex-direction: column;
+    opacity: 0.3;
     &--polish,
     &--english {
       text-align: center;
