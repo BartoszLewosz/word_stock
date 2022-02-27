@@ -389,4 +389,8 @@ template {
   visibility: visible;
 }
 
+.photo__description--english-show {
+  visibility: visible;
+}
+
 /*# sourceMappingURL=main.css.map */
