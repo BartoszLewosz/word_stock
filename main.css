@@ -380,9 +380,13 @@ template {
   flex-direction: column;
   visibility: hidden;
 }
-.photo__description--polish, .photo__description--english {
+.photo__description--english, .photo__description--polish {
   text-align: center;
   margin: 8px;
+}
+
+.photo__description--polish-show {
+  visibility: visible;
 }
 
 /*# sourceMappingURL=main.css.map */
