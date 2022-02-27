@@ -37,10 +37,13 @@
     display: flex;
     flex-direction: column;
     visibility: hidden;
-    &--polish,
-    &--english {
+    &--english,
+    &--polish {
       text-align: center;
       margin: 8px;
     }
   }
+}
+.photo__description--polish-show {
+  visibility: visible;
 }
