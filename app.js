@@ -7,6 +7,8 @@ for (let i = 0; i < photoItem.length; i++) {
 
 function descriptionDisplay(e) {
   const itemFirstChild = e.target.nextElementSibling.firstElementChild;
+  const itemLastChild = e.target.nextElementSibling.lastElementChild;
   console.log(itemFirstChild);
+  console.log(itemLastChild);
   itemFirstChild.classList.toggle("photo__description--polish-show");
 }
