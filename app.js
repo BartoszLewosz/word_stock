@@ -11,4 +11,7 @@ function descriptionDisplay(e) {
   console.log(itemFirstChild);
   console.log(itemLastChild);
   itemFirstChild.classList.toggle("photo__description--polish-show");
+  if (itemFirstChild.classList.contains("photo__description--polish-show")) {
+    itemLastChild.classList.toggle("photo__description--english-show");
+  }
 }
