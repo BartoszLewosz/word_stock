@@ -6,7 +6,7 @@ for (let i = 0; i < photoItem.length; i++) {
 }
 
 function descriptionDisplay(e) {
-  const itemSibling = e.target.nextElementSibling;
-  console.log(itemSibling);
-  itemSibling.style.visibility = "visible";
+  const itemFirstChild = e.target.nextElementSibling.firstElementChild;
+  console.log(itemFirstChild);
+  itemFirstChild.classList.toggle("photo__description--polish-show");
 }
