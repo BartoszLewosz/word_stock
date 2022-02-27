@@ -10,9 +10,9 @@ function descriptionDisplay(e) {
   const itemLastChild = e.target.nextElementSibling.lastElementChild;
   console.log(itemFirstChild);
   console.log(itemLastChild);
-  itemLastChild.classList.toggle("photo__description--english-show");
+  itemFirstChild.classList.toggle("photo__description--english-show");
 
-  if (!itemLastChild.classList.contains("photo__description--english-show")) {
-    itemFirstChild.classList.toggle("photo__description--polish-show");
+  if (!itemFirstChild.classList.contains("photo__description--english-show")) {
+    itemLastChild.classList.toggle("photo__description--polish-show");
   }
 }
