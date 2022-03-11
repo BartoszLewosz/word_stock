@@ -2,12 +2,6 @@ const photoDescription = document.querySelectorAll(".photo__description--js");
 const photoItem = document.querySelectorAll(".photo__item--js");
 const randomImage = document.querySelector(".random-image--js");
 
-const imageArray = [
-  "./assets/animals/003-horse.png",
-  "./assets/animals/001-cow.png",
-  "./assets/animals/002-dog.png",
-];
-
 // for (let i = 0; i < photoItem.length; i++) {
 //   photoItem[i].addEventListener("click", descriptionDisplay);
 // }
@@ -27,8 +21,12 @@ function descriptionDisplay(e) {
   }
 }
 
-const imageArrayLength = imageArray.length;
-const randomNumber = Math.floor(imageArrayLength * Math.random());
-console.log(randomNumber);
+const imageArray = [
+  "./assets/animals/003-horse.png",
+  "./assets/animals/001-cow.png",
+  "./assets/animals/002-dog.png",
+];
+
+const randomNumber = Math.floor(imageArray.length * Math.random());
 
 randomImage.src = imageArray[randomNumber];
