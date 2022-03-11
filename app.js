@@ -20,3 +20,7 @@ function descriptionDisplay(e) {
     itemLastChild.classList.toggle("photo__description--polish-show");
   }
 }
+
+const imageArrayLength = imageArray.length;
+const randomNumber = Math.floor(imageArrayLength * Math.random());
+console.log(randomNumber);
