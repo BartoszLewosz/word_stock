@@ -1,6 +1,12 @@
 const photoDescription = document.querySelectorAll(".photo__description--js");
 const photoItem = document.querySelectorAll(".photo__item--js");
-const imageArray = [1, 2, 3, 4, 5, 6];
+const randomImage = document.querySelector(".random-image--js");
+
+const imageArray = [
+  "./assets/animals/003-horse.png",
+  "./assets/animals/001-cow.png",
+  "./assets/animals/002-dog.png",
+];
 
 // for (let i = 0; i < photoItem.length; i++) {
 //   photoItem[i].addEventListener("click", descriptionDisplay);
