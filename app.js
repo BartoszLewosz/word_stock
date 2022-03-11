@@ -30,3 +30,5 @@ function descriptionDisplay(e) {
 const imageArrayLength = imageArray.length;
 const randomNumber = Math.floor(imageArrayLength * Math.random());
 console.log(randomNumber);
+
+randomImage.src = imageArray[randomNumber];
