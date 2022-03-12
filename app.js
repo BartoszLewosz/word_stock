@@ -27,6 +27,9 @@ const imageArray = [
   "./assets/animals/002-dog.png",
 ];
 
-const randomNumber = Math.floor(imageArray.length * Math.random());
-
-randomImage.src = imageArray[randomNumber];
+function getImage() {
+  const randomNumber = Math.floor(imageArray.length * Math.random());
+  randomImage.src = imageArray[randomNumber];
+  console.log(randomImage);
+}
+getImage();
