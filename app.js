@@ -22,9 +22,15 @@ function descriptionDisplay(e) {
 }
 
 const imageArray = [
-  "./assets/animals/003-horse.png",
   "./assets/animals/001-cow.png",
   "./assets/animals/002-dog.png",
+  "./assets/animals/003-horse.png",
+  "./assets/animals/004-pig.png",
+  "./assets/animals/005-lion.png",
+  "./assets/animals/006-elephant.png",
+  "./assets/animals/007-monkey.png",
+  "./assets/animals/008-whale.png",
+  "./assets/animals/009-frog.png",
 ];
 
 function getImage() {
