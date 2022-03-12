@@ -1,6 +1,12 @@
 const photoDescription = document.querySelectorAll(".photo__description--js");
 const photoItem = document.querySelectorAll(".photo__item--js");
 const randomImage = document.querySelector(".random-image--js");
+const randomInput = document.querySelector(".random-image__input");
+const randomImageButton = document.querySelector(
+  ".random-image__button-submit--js"
+);
+
+console.log(randomImageButton);
 
 // for (let i = 0; i < photoItem.length; i++) {
 //   photoItem[i].addEventListener("click", descriptionDisplay);
@@ -36,6 +42,11 @@ const imageArray = [
 function getImage() {
   const randomNumber = Math.floor(imageArray.length * Math.random());
   randomImage.src = imageArray[randomNumber];
-  console.log(randomImage);
 }
 getImage();
+
+randomImageButton.addEventListener("click", checkAnswer);
+
+function checkAnswer(e) {
+  e.preventDefault();
+}
