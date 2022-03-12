@@ -408,5 +408,20 @@ template {
   width: 300px;
   height: 300px;
 }
+.random-image__input {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  border: 4px solid gray;
+  font-size: 1.6rem;
+  height: 4rem;
+  max-width: 30vh;
+  border-radius: 16px;
+}
+.random-image__input:focus {
+  content: "";
+  border: 4px solid #70c570;
+  outline: none;
+}
 
 /*# sourceMappingURL=main.css.map */
