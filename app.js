@@ -49,4 +49,5 @@ randomImageButton.addEventListener("click", checkAnswer);
 
 function checkAnswer(e) {
   e.preventDefault();
+  console.log(randomInput.value);
 }
