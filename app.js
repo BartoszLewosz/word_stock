@@ -52,4 +52,7 @@ function checkAnswer(e) {
   console.log(randomInput.value);
   srcImage = randomImage.getAttribute("src");
   console.log(srcImage);
+  const inputLowerCase = randomInput.value.toLowerCase();
+  console.log(inputLowerCase);
+  console.log(srcImage.indexOf(inputLowerCase));
 }
