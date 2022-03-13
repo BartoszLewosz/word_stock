@@ -55,4 +55,9 @@ function checkAnswer(e) {
   const inputLowerCase = randomInput.value.toLowerCase();
   console.log(inputLowerCase);
   console.log(srcImage.indexOf(inputLowerCase));
+  if (srcImage.indexOf(inputLowerCase) > -1) {
+    console.log("correct");
+  } else {
+    console.log("Try again");
+  }
 }
