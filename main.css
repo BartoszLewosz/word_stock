@@ -425,10 +425,9 @@ template {
   content: "";
   border: 4px solid #70c570;
 }
-.random-image__correct,
-.random-image__photo__correct {
+.random-image__result,
+.random-image__photo__result {
   border-radius: 16px;
-  background: linear-gradient(90deg, white 0%, #09791e 35%, #04aea2 84%, #00d4ff 100%);
   color: white;
   font-size: 1.5rem;
   text-align: center;
