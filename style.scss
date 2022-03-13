@@ -78,7 +78,8 @@
       border: 4px solid #70c570;
     }
   }
-  &__button-submit {
+  &__button-submit,
+  &__button-generate {
     margin: 1rem;
     padding: 1rem;
     border: 4px solid gray;
@@ -89,5 +90,9 @@
     border: none;
     cursor: pointer;
     outline: none;
+  }
+  &__button-generate {
+    display: flex;
+    margin: auto;
   }
 }
