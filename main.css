@@ -435,8 +435,15 @@ template {
   margin: 1rem;
   opacity: 0;
 }
-.random-image__correct.active,
-.random-image__photo__correct.active {
+.random-image__result.correct,
+.random-image__photo__result.correct {
+  background: linear-gradient(90deg, white 0%, #09791e 35%, #04aea2 84%, #00d4ff 100%);
+  opacity: 1;
+}
+.random-image__result.try-again,
+.random-image__photo__result.try-again {
+  color: black;
+  background: linear-gradient(90deg, white 0%, #dbb511 35%, #d1ca19 84%, #ff5700 100%);
   opacity: 1;
 }
 .random-image__button-submit, .random-image__button-generate,
