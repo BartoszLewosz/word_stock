@@ -51,8 +51,11 @@ randomImageButton.addEventListener("click", checkAnswer);
 function checkAnswer(e) {
   e.preventDefault();
   const srcImage = randomImage.getAttribute("src");
+  const re = /assets|.png|animals|[0-9]|-/;
+  const words = srcImage.split(re);
+  const imageName = words[6];
   const inputLowerCase = randomInput.value.toLowerCase();
-  if (srcImage.indexOf(inputLowerCase) > -1) {
+  if (inputLowerCase.includes(imageName)) {
     console.log("correct");
     randomResult.classList.add("correct");
     randomResult.classList.remove("try-again");
