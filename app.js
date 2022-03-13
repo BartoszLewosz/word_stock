@@ -49,12 +49,8 @@ randomImageButton.addEventListener("click", checkAnswer);
 
 function checkAnswer(e) {
   e.preventDefault();
-  console.log(randomInput.value);
-  srcImage = randomImage.getAttribute("src");
-  console.log(srcImage);
+  const srcImage = randomImage.getAttribute("src");
   const inputLowerCase = randomInput.value.toLowerCase();
-  console.log(inputLowerCase);
-  console.log(srcImage.indexOf(inputLowerCase));
   if (srcImage.indexOf(inputLowerCase) > -1) {
     console.log("correct");
   } else {
