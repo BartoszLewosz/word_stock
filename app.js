@@ -50,4 +50,6 @@ randomImageButton.addEventListener("click", checkAnswer);
 function checkAnswer(e) {
   e.preventDefault();
   console.log(randomInput.value);
+  srcImage = randomImage.getAttribute("src");
+  console.log(srcImage);
 }
