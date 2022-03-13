@@ -5,6 +5,7 @@ const randomInput = document.querySelector(".random-image__input");
 const randomImageButton = document.querySelector(
   ".random-image__button-submit--js"
 );
+const randomCorrect = document.querySelector(".random-image__correct");
 
 console.log(randomImageButton);
 
