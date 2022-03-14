@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background: #ecf0f3;
+}
 .hero {
   background-color: lightgreen;
   text-align: center;
@@ -28,6 +31,13 @@
   }
   &__item {
     cursor: pointer;
+    &--background {
+      background: #ecf0f3;
+      border-radius: 1rem;
+      margin: 1rem;
+      padding: 1rem;
+      box-shadow: 1rem 1rem 1.2rem #cbced1, -1rem -1rem 1.2rem white;
+    }
   }
   &__image {
     width: 100px;
