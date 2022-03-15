@@ -7,8 +7,6 @@ const randomImageButton = document.querySelector(
 );
 const randomResult = document.querySelector(".random-image__result");
 
-console.log(randomImageButton);
-
 // for (let i = 0; i < photoItem.length; i++) {
 //   photoItem[i].addEventListener("click", descriptionDisplay);
 // }
@@ -19,6 +17,7 @@ photoItem.forEach((item) => {
 function descriptionDisplay(e) {
   const itemFirstChild = e.target.nextElementSibling.firstElementChild;
   const itemLastChild = e.target.nextElementSibling.lastElementChild;
+  console.log(e.target);
   console.log(itemFirstChild);
   console.log(itemLastChild);
   itemFirstChild.classList.toggle("photo__description--english-show");

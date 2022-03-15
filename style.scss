@@ -42,6 +42,7 @@ body {
   &__image {
     width: 100px;
     height: 100px;
+    pointer-events: none;
   }
   &__description {
     display: flex;

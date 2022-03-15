@@ -385,6 +385,7 @@ body {
 .photo__image {
   width: 100px;
   height: 100px;
+  pointer-events: none;
 }
 .photo__description {
   display: flex;
