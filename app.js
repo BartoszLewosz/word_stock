@@ -54,7 +54,7 @@ function checkAnswer(e) {
   const words = srcImage.split(re);
   const imageName = words[6];
   const inputLowerCase = randomInput.value.toLowerCase();
-  if (inputLowerCase.includes(imageName)) {
+  if (inputLowerCase === imageName) {
     console.log("correct");
     randomResult.classList.add("correct");
     randomResult.classList.remove("try-again");
