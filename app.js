@@ -6,6 +6,7 @@ const randomImageButton = document.querySelector(
   ".random-image__button-submit--js"
 );
 const randomResult = document.querySelector(".random-image__result");
+const generateButton = document.querySelector(".random-image__button-generate");
 
 // for (let i = 0; i < photoItem.length; i++) {
 //   photoItem[i].addEventListener("click", descriptionDisplay);
@@ -43,7 +44,6 @@ function getImage() {
   const randomNumber = Math.floor(imageArray.length * Math.random());
   randomImage.src = imageArray[randomNumber];
 }
-getImage();
 
 randomImageButton.addEventListener("click", checkAnswer);
 
@@ -65,4 +65,11 @@ function checkAnswer(e) {
     randomResult.innerText = "Try again...";
     console.log("Try again");
   }
+}
+
+generateButton.addEventListener("click", scrollPosition);
+
+function scrollPosition(e) {
+  e.preventDefault();
+  getImage();
 }
