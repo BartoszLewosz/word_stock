@@ -64,6 +64,7 @@ function checkAnswer(e) {
     randomResult.classList.remove("correct");
     randomResult.innerText = "Try again...";
     console.log("Try again");
+    randomInput.value = "";
   }
 }
 
@@ -72,4 +73,7 @@ generateButton.addEventListener("click", scrollPosition);
 function scrollPosition(e) {
   e.preventDefault();
   getImage();
+  randomInput.value = "";
+  randomResult.classList.remove("correct");
+  randomResult.classList.remove("try-again");
 }
