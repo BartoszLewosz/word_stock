@@ -476,6 +476,17 @@ body {
 .random-image__photo__button-generate {
   display: flex;
   margin: auto;
+  background: #ecf0f3;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 1rem 1rem 1.2rem #cbced1, -1rem -1rem 1.2rem white;
+}
+.random-image__button-submit,
+.random-image__photo__button-submit {
+  background: #ecf0f3;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 1rem 1rem 1.2rem #cbced1, -1rem -1rem 1.2rem white;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -138,5 +138,15 @@ body {
   &__button-generate {
     display: flex;
     margin: auto;
+    background: #ecf0f3;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 1rem 1rem 1.2rem #cbced1, -1rem -1rem 1.2rem white;
+  }
+  &__button-submit {
+    background: #ecf0f3;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 1rem 1rem 1.2rem #cbced1, -1rem -1rem 1.2rem white;
   }
 }
