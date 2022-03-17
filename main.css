@@ -510,6 +510,15 @@ body {
   height: 150px;
   width: 150px;
   border: solid 4px red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.drag-drop__box--item {
+  background: url(./assets/animals/001-cow.png) no-repeat center center;
+  background-size: cover;
+  height: 100px;
+  width: 100px;
 }
 
 /*# sourceMappingURL=main.css.map */
