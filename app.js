@@ -8,6 +8,7 @@ const randomImageButton = document.querySelector(
 const randomResult = document.querySelector(".random-image__result");
 const generateButton = document.querySelector(".random-image__button-generate");
 const dragDropItem = document.querySelector(".drag-drop__box--item-js");
+const dragDropBox = document.querySelectorAll(".drag-drop__box--js");
 
 // for (let i = 0; i < photoItem.length; i++) {
 //   photoItem[i].addEventListener("click", descriptionDisplay);
@@ -80,8 +81,11 @@ function scrollPosition(e) {
 }
 
 dragDropItem.addEventListener("dragstart", dragStart);
+dragDropItem.addEventListener("dragend", dragEnd);
 
 function dragStart(e) {
   console.log("drag start");
   setTimeout(() => this.classList.add("hide"), 0);
 }
+
+function dragEnd() {}
