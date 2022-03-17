@@ -63,14 +63,15 @@ body {
 }
 
 .random-image,
+.drag-drop,
 .random-image__photo {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   &__title {
-    margin: 1rem;
-    padding: 1rem;
+    margin: 2rem;
+    padding: 2rem;
   }
   &__image {
     width: 300px;
