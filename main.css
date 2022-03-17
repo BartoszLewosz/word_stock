@@ -522,4 +522,8 @@ body {
   width: 100px;
 }
 
+.hide {
+  display: none;
+}
+
 /*# sourceMappingURL=main.css.map */

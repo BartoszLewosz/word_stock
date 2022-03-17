@@ -83,4 +83,5 @@ dragDropItem.addEventListener("dragstart", dragStart);
 
 function dragStart(e) {
   console.log("drag start");
+  setTimeout(() => this.classList.add("hide"), 0);
 }
