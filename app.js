@@ -78,3 +78,9 @@ function scrollPosition(e) {
   randomResult.classList.remove("correct");
   randomResult.classList.remove("try-again");
 }
+
+dragDropItem.addEventListener("dragstart", dragStart);
+
+function dragStart(e) {
+  console.log("drag start");
+}
