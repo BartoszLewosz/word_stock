@@ -501,4 +501,15 @@ body {
   box-shadow: 1rem 1rem 1.2rem #cbced1, -1rem -1rem 1.2rem white;
 }
 
+.drag-drop__container {
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+}
+.drag-drop__box {
+  height: 150px;
+  width: 150px;
+  border: solid 4px red;
+}
+
 /*# sourceMappingURL=main.css.map */
