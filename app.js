@@ -91,34 +91,28 @@ dragDropBox.forEach((box) => {
 });
 
 function dragStart(e) {
-  console.log("drag start");
   this.classList.add("drag-drop__empty");
   setTimeout(() => this.classList.add("hide"), 0);
 }
 
 function dragEnter(e) {
-  console.log("drag enter");
   e.preventDefault();
   e.target.classList.add("drag-over");
 }
 function dragOver(e) {
   e.preventDefault();
   e.target.classList.add("drag-over");
-  console.log("drag over");
 }
 function dragLeave(e) {
   e.target.classList.remove("drag-over");
   // this.className = "drag-drop__box";
-  console.log("drag leave");
 }
 function drop(e) {
   e.target.classList.remove("drag-over");
-  e.target.append(dragDropItem);
-  console.log("drop");
+  this.appendChild(dragDropItem);
 }
 
 function dragEnd(e) {
   this.classList.remove("hide");
   e.target.classList.remove("drag-over");
-  console.log("drag end");
 }
