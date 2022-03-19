@@ -98,17 +98,22 @@ function dragStart(e) {
 
 function dragEnter(e) {
   console.log("drag enter");
+  e.preventDefault();
   e.target.classList.add("drag-over");
 }
 function dragOver(e) {
+  e.preventDefault();
+  e.target.classList.add("drag-over");
   console.log("drag over");
 }
 function dragLeave(e) {
   e.target.classList.remove("drag-over");
+  // this.className = "drag-drop__box";
   console.log("drag leave");
 }
 function drop(e) {
   e.target.classList.remove("drag-over");
+  e.target.append(dragDropItem);
   console.log("drop");
 }
 
