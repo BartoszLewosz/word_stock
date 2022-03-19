@@ -521,7 +521,6 @@ body {
   margin: 1rem;
 }
 .drag-drop__box--item {
-  background: url(./assets/animals/001-cow.png) no-repeat center center;
   background-size: cover;
   height: 100px;
   width: 100px;
