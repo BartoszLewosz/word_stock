@@ -158,6 +158,11 @@ body {
     align-items: center;
     margin: 2rem;
   }
+  &__random-image {
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+  }
   &__box {
     height: 150px;
     width: 150px;
@@ -167,7 +172,6 @@ body {
     align-items: center;
     margin: 1rem;
     &--item {
-      background: url(./assets/animals/001-cow.png) no-repeat center center;
       background-size: cover;
       height: 100px;
       width: 100px;
