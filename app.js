@@ -10,12 +10,22 @@ const generateButton = document.querySelector(".random-image__button-generate");
 const dragDropItem = document.querySelector(".drag-drop__box--item-js");
 const dragDropBox = document.querySelectorAll(".drag-drop__box--js");
 
-// for (let i = 0; i < photoItem.length; i++) {
-//   photoItem[i].addEventListener("click", descriptionDisplay);
-// }
-photoItem.forEach((item) => {
-  item.addEventListener("click", descriptionDisplay);
-});
+function addEventListeners() {
+  photoItem.forEach((item) => {
+    item.addEventListener("click", descriptionDisplay);
+  });
+  randomImageButton.addEventListener("click", checkAnswer);
+  generateButton.addEventListener("click", scrollPosition);
+  dragDropItem.addEventListener("dragstart", dragStart);
+  dragDropItem.addEventListener("dragend", dragEnd);
+
+  dragDropBox.forEach((box) => {
+    box.addEventListener("dragenter", dragEnter);
+    box.addEventListener("dragover", dragOver);
+    box.addEventListener("dragleave", dragLeave);
+    box.addEventListener("drop", drop);
+  });
+}
 
 function descriptionDisplay(e) {
   const itemFirstChild = e.target.nextElementSibling.firstElementChild;
@@ -47,8 +57,6 @@ function getImage() {
   randomImage.src = imageArray[randomNumber];
 }
 
-randomImageButton.addEventListener("click", checkAnswer);
-
 function checkAnswer(e) {
   e.preventDefault();
   const srcImage = randomImage.getAttribute("src");
@@ -70,8 +78,6 @@ function checkAnswer(e) {
   }
 }
 
-generateButton.addEventListener("click", scrollPosition);
-
 function scrollPosition(e) {
   e.preventDefault();
   getImage();
@@ -79,16 +85,6 @@ function scrollPosition(e) {
   randomResult.classList.remove("correct");
   randomResult.classList.remove("try-again");
 }
-
-dragDropItem.addEventListener("dragstart", dragStart);
-dragDropItem.addEventListener("dragend", dragEnd);
-
-dragDropBox.forEach((box) => {
-  box.addEventListener("dragenter", dragEnter);
-  box.addEventListener("dragover", dragOver);
-  box.addEventListener("dragleave", dragLeave);
-  box.addEventListener("drop", drop);
-});
 
 function dragStart(e) {
   this.classList.add("drag-drop__empty");
@@ -116,3 +112,4 @@ function dragEnd(e) {
   this.classList.remove("hide");
   e.target.classList.remove("drag-over");
 }
+addEventListeners();
