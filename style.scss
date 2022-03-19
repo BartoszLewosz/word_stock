@@ -172,8 +172,18 @@ body {
       height: 100px;
       width: 100px;
     }
+    &__empty {
+      background: gray;
+    }
+
+    &--hovered {
+      background: #f4f4f4;
+    }
   }
 }
 .hide {
   display: none;
+}
+.drag-over {
+  border: dotted 4px blue;
 }

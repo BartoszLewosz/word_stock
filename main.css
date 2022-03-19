@@ -521,9 +521,19 @@ body {
   height: 100px;
   width: 100px;
 }
+.drag-drop__box__empty {
+  background: gray;
+}
+.drag-drop__box--hovered {
+  background: #f4f4f4;
+}
 
 .hide {
   display: none;
+}
+
+.drag-over {
+  border: dotted 4px blue;
 }
 
 /*# sourceMappingURL=main.css.map */
