@@ -83,9 +83,37 @@ function scrollPosition(e) {
 dragDropItem.addEventListener("dragstart", dragStart);
 dragDropItem.addEventListener("dragend", dragEnd);
 
+dragDropBox.forEach((box) => {
+  box.addEventListener("dragenter", dragEnter);
+  box.addEventListener("dragover", dragOver);
+  box.addEventListener("dragleave", dragLeave);
+  box.addEventListener("drop", drop);
+});
+
 function dragStart(e) {
   console.log("drag start");
+  this.classList.add("drag-drop__empty");
   setTimeout(() => this.classList.add("hide"), 0);
 }
 
-function dragEnd() {}
+function dragEnter(e) {
+  console.log("drag enter");
+  e.target.classList.add("drag-over");
+}
+function dragOver(e) {
+  console.log("drag over");
+}
+function dragLeave(e) {
+  e.target.classList.remove("drag-over");
+  console.log("drag leave");
+}
+function drop(e) {
+  e.target.classList.remove("drag-over");
+  console.log("drop");
+}
+
+function dragEnd(e) {
+  this.classList.remove("hide");
+  e.target.classList.remove("drag-over");
+  console.log("drag end");
+}
