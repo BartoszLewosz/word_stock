@@ -100,10 +100,12 @@ function dragOver(e) {
   e.target.classList.add("drag-over");
 }
 function dragLeave(e) {
+  e.preventDefault();
   e.target.classList.remove("drag-over");
   // this.className = "drag-drop__box";
 }
 function drop(e) {
+  e.preventDefault();
   e.target.classList.remove("drag-over");
   this.appendChild(dragDropItem);
 }
