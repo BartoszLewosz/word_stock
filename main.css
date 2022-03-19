@@ -506,6 +506,11 @@ body {
   align-items: center;
   margin: 2rem;
 }
+.drag-drop__random-image {
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+}
 .drag-drop__box {
   height: 150px;
   width: 150px;
