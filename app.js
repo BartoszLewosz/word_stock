@@ -9,6 +9,7 @@ const randomResult = document.querySelector(".random-image__result");
 const generateButton = document.querySelector(".random-image__button-generate");
 const dragDropItem = document.querySelector(".drag-drop__box--item-js");
 const dragDropBox = document.querySelectorAll(".drag-drop__box--js");
+const dragDropImage = document.querySelector(".drag-drop__random-image--js");
 
 function addEventListeners() {
   photoItem.forEach((item) => {
@@ -114,4 +115,10 @@ function dragEnd(e) {
   this.classList.remove("hide");
   e.target.classList.remove("drag-over");
 }
+
+(function dragDropRandomImage() {
+  const randomNumber = Math.floor(imageArray.length * Math.random());
+  dragDropImage.src = imageArray[randomNumber];
+})();
+
 addEventListeners();
