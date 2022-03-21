@@ -115,4 +115,10 @@ function dragEnd(e) {
   this.classList.remove("hide");
   e.target.classList.remove("drag-over");
 }
+
+(function dragDropRandomImage() {
+  const randomNumber = Math.floor(imageArray.length * Math.random());
+  dragDropImage.src = imageArray[randomNumber];
+})();
+
 addEventListeners();
