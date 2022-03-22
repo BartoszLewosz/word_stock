@@ -515,6 +515,11 @@ body {
   height: 100px;
   width: 100px;
 }
+.drag-drop__group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .drag-drop__box {
   height: 150px;
   width: 150px;
