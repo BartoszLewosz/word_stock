@@ -158,6 +158,10 @@ body {
     align-items: center;
     margin: 2rem;
   }
+  &__targets {
+    display: flex;
+    flex-direction: row;
+  }
   &__random-image {
     background-size: cover;
     height: 100px;
