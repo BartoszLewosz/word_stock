@@ -119,6 +119,7 @@ function dragEnd(e) {
   e.target.classList.remove("drag-over");
 }
 
+// Immediately Invoked Function Expression (IIFE)
 (function dragDropRandomImage() {
   const randomNumber = Math.floor(imageArray.length * Math.random());
   dragDropImage.src = imageArray[randomNumber];
