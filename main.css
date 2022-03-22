@@ -534,11 +534,11 @@ body {
   height: 100px;
   width: 100px;
 }
-.drag-drop__box__empty {
-  background: gray;
-}
 .drag-drop__box--hovered {
   background: #c8c8c8;
+}
+.drag-drop__description {
+  font-size: 1.3rem;
 }
 
 .hide {

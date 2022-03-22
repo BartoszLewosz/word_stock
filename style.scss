@@ -185,13 +185,12 @@ body {
       height: 100px;
       width: 100px;
     }
-    &__empty {
-      background: gray;
-    }
-
     &--hovered {
       background: #c8c8c8;
     }
+  }
+  &__description {
+    font-size: 1.3rem;
   }
 }
 .hide {
