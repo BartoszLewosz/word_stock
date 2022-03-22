@@ -99,15 +99,18 @@ function dragEnter(e) {
 function dragOver(e) {
   e.preventDefault();
   e.target.classList.add("drag-over");
+  e.target.classList.add("drag-drop__box--hovered");
 }
 function dragLeave(e) {
   e.preventDefault();
   e.target.classList.remove("drag-over");
+  e.target.classList.remove("drag-drop__box--hovered");
   // this.className = "drag-drop__box";
 }
 function drop(e) {
   e.preventDefault();
   e.target.classList.remove("drag-over");
+  e.target.classList.remove("drag-drop__box--hovered");
   this.appendChild(dragDropItem);
 }
 
