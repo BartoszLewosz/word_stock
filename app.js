@@ -10,6 +10,9 @@ const generateButton = document.querySelector(".random-image__button-generate");
 const dragDropItem = document.querySelector(".drag-drop__box--item-js");
 const dragDropBox = document.querySelectorAll(".drag-drop__box--js");
 const dragDropImage = document.querySelector(".drag-drop__random-image--js");
+const dragDropDescription = document.querySelector(
+  ".drag-drop__description--js"
+);
 
 function addEventListeners() {
   photoItem.forEach((item) => {
@@ -120,9 +123,20 @@ function dragEnd(e) {
 }
 
 // Immediately Invoked Function Expression (IIFE)
-(function dragDropRandomImage() {
+function dragDropRandomImage() {
   const randomNumber = Math.floor(imageArray.length * Math.random());
   dragDropImage.src = imageArray[randomNumber];
-})();
+}
+const randomExample = dragDropRandomImage();
+
+function dragDropName() {
+  const srcImage = dragDropImage.getAttribute("src");
+  const re = /assets|.png|animals|[0-9]|-/;
+  const words = srcImage.split(re);
+  const imageName = words[6];
+  console.log(imageName);
+  console.log(dragDropDescription.innerText);
+  dragDropDescription.innerText = imageName;
+}
 
 addEventListeners();
