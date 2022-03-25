@@ -123,11 +123,10 @@ function dragEnd(e) {
 }
 
 // Immediately Invoked Function Expression (IIFE)
-function dragDropRandomImage() {
+function rand() {
   const randomNumber = Math.floor(imageArray.length * Math.random());
   dragDropImage.src = imageArray[randomNumber];
 }
-const randomExample = dragDropRandomImage();
 
 function dragDropName() {
   const srcImage = dragDropImage.getAttribute("src");
@@ -138,5 +137,30 @@ function dragDropName() {
   console.log(dragDropDescription.innerText);
   dragDropDescription.innerText = imageName;
 }
+
+dragDropBox.forEach((box, index) => {
+  const randomNumber = Math.floor(imageArray.length * Math.random());
+
+  const boxImage = document.createElement("img");
+  boxImage.setAttribute("src", imageArray[randomNumber]);
+  boxImage.classList.add("drag-drop__random-image");
+  box.appendChild(boxImage);
+});
+
+// console.log(typeof dragDropBox);
+// const dragDropArray = Object.entries(dragDropBox);
+// console.log(dragDropArray);
+
+// for (let i = 1; i < dragDropArray.length; i++) {
+//   const randomNumber = Math.floor(imageArray.length * Math.random());
+//   const boxImage = document.createElement("img");
+//   boxImage.setAttribute("src", imageArray[randomNumber]);
+//   boxImage.classList.add("drag-drop__random-image");
+//   dragDropArray.appendChild(boxImage);
+//   console.log(boxImage);
+// }
+// const RandomDragDrop = (getRandomDragDrop) => {
+//   for (let box = 0; box < dragDropBox[index]; box++)
+// }
 
 addEventListeners();
