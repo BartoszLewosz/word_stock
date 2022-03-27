@@ -56,9 +56,9 @@ const imageArray = [
   "./assets/animals/009-frog.png",
 ];
 
-function getImage() {
-  const randomNumber = Math.floor(imageArray.length * Math.random());
-  randomImage.src = imageArray[randomNumber];
+function getRandomImage(arr, image) {
+  const randomNumber = Math.floor(arr.length * Math.random());
+  image.src = arr[randomNumber];
 }
 
 function checkAnswer(e) {
@@ -84,7 +84,7 @@ function checkAnswer(e) {
 
 function scrollPosition(e) {
   e.preventDefault();
-  getImage();
+  getRandomImage(imageArray, randomImage);
   randomInput.value = "";
   randomResult.classList.remove("correct");
   randomResult.classList.remove("try-again");
@@ -122,11 +122,7 @@ function dragEnd(e) {
   e.target.classList.remove("drag-over");
 }
 
-// Immediately Invoked Function Expression (IIFE)
-function rand() {
-  const randomNumber = Math.floor(imageArray.length * Math.random());
-  dragDropImage.src = imageArray[randomNumber];
-}
+getRandomImage(imageArray, dragDropImage);
 
 function dragDropName() {
   const srcImage = dragDropImage.getAttribute("src");
@@ -140,6 +136,7 @@ function dragDropName() {
 
 dragDropBox.forEach((box, index) => {
   const randomNumber = Math.floor(imageArray.length * Math.random());
+  dragDropName(box, index);
 
   const boxImage = document.createElement("img");
   boxImage.setAttribute("src", imageArray[randomNumber]);
