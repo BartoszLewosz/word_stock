@@ -136,12 +136,12 @@ function dragDropName() {
 
 dragDropBox.forEach((box, index) => {
   const randomNumber = Math.floor(imageArray.length * Math.random());
-  dragDropName(box, index);
 
   const boxImage = document.createElement("img");
   boxImage.setAttribute("src", imageArray[randomNumber]);
   boxImage.classList.add("drag-drop__random-image");
   box.appendChild(boxImage);
+  dragDropName(box);
 });
 
 // console.log(typeof dragDropBox);
