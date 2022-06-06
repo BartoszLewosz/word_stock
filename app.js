@@ -34,8 +34,6 @@ function addEventListeners() {
 function descriptionDisplay(e) {
   const itemFirstChild = e.target.nextElementSibling.firstElementChild;
   const itemLastChild = e.target.nextElementSibling.lastElementChild;
-  console.log(e.target);
-  console.log(itemFirstChild);
   console.log(itemLastChild);
   itemFirstChild.classList.toggle("photo__description--english-show");
 
@@ -129,20 +127,8 @@ function dragDropName() {
   const re = /assets|.png|animals|[0-9]|-/;
   const words = srcImage.split(re);
   const imageName = words[6];
-  console.log(imageName);
-  console.log(dragDropDescription.innerText);
   dragDropDescription.innerText = imageName;
 }
-
-dragDropBox.forEach((box, index) => {
-  const randomNumber = Math.floor(imageArray.length * Math.random());
-
-  const boxImage = document.createElement("img");
-  boxImage.setAttribute("src", imageArray[randomNumber]);
-  boxImage.classList.add("drag-drop__random-image");
-  box.appendChild(boxImage);
-  dragDropName(box);
-});
 
 // console.log(typeof dragDropBox);
 // const dragDropArray = Object.entries(dragDropBox);
