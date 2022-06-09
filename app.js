@@ -7,12 +7,6 @@ const randomImageButton = document.querySelector(
 );
 const randomResult = document.querySelector(".random-image__result");
 const generateButton = document.querySelector(".random-image__button-generate");
-const dragDropItem = document.querySelector(".drag-drop__box--item-js");
-const dragDropBox = document.querySelectorAll(".drag-drop__box--js");
-const dragDropImage = document.querySelector(".drag-drop__random-image--js");
-const dragDropDescription = document.querySelector(
-  ".drag-drop__description--js"
-);
 
 function addEventListeners() {
   photoItem.forEach((item) => {
@@ -20,15 +14,6 @@ function addEventListeners() {
   });
   randomImageButton.addEventListener("click", checkAnswer);
   generateButton.addEventListener("click", scrollPosition);
-  dragDropItem.addEventListener("dragstart", dragStart);
-  dragDropItem.addEventListener("dragend", dragEnd);
-
-  dragDropBox.forEach((box) => {
-    box.addEventListener("dragenter", dragEnter);
-    box.addEventListener("dragover", dragOver);
-    box.addEventListener("dragleave", dragLeave);
-    box.addEventListener("drop", drop);
-  });
 }
 
 function descriptionDisplay(e) {
@@ -88,48 +73,14 @@ function scrollPosition(e) {
   randomResult.classList.remove("try-again");
 }
 
-function dragStart(e) {
-  this.classList.add("drag-drop__empty");
-  setTimeout(() => this.classList.add("hide"), 0);
-}
-
-function dragEnter(e) {
-  e.preventDefault();
-  e.target.classList.add("drag-over");
-}
-function dragOver(e) {
-  e.preventDefault();
-  e.target.classList.add("drag-over");
-  e.target.classList.add("drag-drop__box--hovered");
-}
-function dragLeave(e) {
-  e.preventDefault();
-  e.target.classList.remove("drag-over");
-  e.target.classList.remove("drag-drop__box--hovered");
-  // this.className = "drag-drop__box";
-}
-function drop(e) {
-  e.preventDefault();
-  e.target.classList.remove("drag-over");
-  e.target.classList.remove("drag-drop__box--hovered");
-  this.appendChild(dragDropItem);
-}
-
-function dragEnd(e) {
-  this.classList.remove("hide");
-  e.target.classList.remove("drag-over");
-}
-
-getRandomImage(imageArray, dragDropImage);
-
-function dragDropName() {
-  const srcImage = dragDropImage.getAttribute("src");
-  const re = /assets|.png|animals|[0-9]|-/;
-  const words = srcImage.split(re);
-  const imageName = words[6];
-  dragDropDescription.innerText = imageName;
-}
-
+// function dragDropName() {
+//   const srcImage = dragDropImage.getAttribute("src");
+//   const re = /assets|.png|animals|[0-9]|-/;
+//   const words = srcImage.split(re);
+//   const imageName = words[6];
+//   dragDropDescription.innerText = imageName;
+// }
+// dragDropName();
 // console.log(typeof dragDropBox);
 // const dragDropArray = Object.entries(dragDropBox);
 // console.log(dragDropArray);
